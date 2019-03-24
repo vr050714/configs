@@ -4,5 +4,5 @@ This is my collection of various configuration files.
 ## MATLAB Color Themes
 ...
 
-## Vim
+## Windows Console Color Themes
 ...
