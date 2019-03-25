@@ -1,0 +1,21 @@
+set number
+
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+
+syntax on
+
+let g:airline#extensions#tabline#enabled=1
+
+nmap <Tab> :tabNext<CR>
+
+call plug#begin('~/.vim/bundle')
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+
+call plug#end()
+
