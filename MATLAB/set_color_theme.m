@@ -10,6 +10,28 @@ end
 
 
 function Themes = get_all_themes
+
+SolarizedCommon = {
+    'Colors_M_Keywords'  'B58900'
+    'Colors_M_Comments'  '93A1A1'
+    'Colors_M_Strings'   '2AA198'
+    'Colors_M_UnterminatedStrings' '586E75'
+    'Colors_M_SystemCommands'  '859900'
+    'Color_CmdWinErrors'       'DC322F'
+    'Color_CmdWinWarnings'     'CB4B16'
+    'Colors_HTML_HTMLLinks'    '268BD2'
+    'Colors_M_Warnings'        'CB4B16'
+    'Editor.VariableHighlighting.Color' 'EEE8D5'
+    'Editor.NonlocalVariableHighlighting.TextColor'  'D33682'
+    'Editorhighlight-lines'  '859900'
+    'ColorsUseSystem' false
+    'ColorsUseMLintAutoFixBackground' false
+    'Editor.VariableHighlighting.Automatic' true
+    'Editor.NonlocalVariableHighlighting' true
+    'EditorCodepadHighVisible' false
+    'EditorCodeBlockDividers' true
+};
+
 Data = {
     'Zenburn', ...
     {
@@ -58,52 +80,23 @@ Data = {
         'EditorCodeBlockDividers' true
     }; ...
     'Solarized Light', ...
-    {
-        'ColorsText'         '657A81'
-        'ColorsBackground'   'FDF6E3'
-        'Colors_M_Keywords'  'B58900'
-        'Colors_M_Comments'  '93A1A1'
-        'Colors_M_Strings'   '2AA198'
-        'Colors_M_UnterminatedStrings' '586E75'
-        'Colors_M_SystemCommands' [181 137 0]
-        'Color_CmdWinErrors' [220  50  47]
-        'Color_CmdWinWarnings' [203  75  22]
-        'Colors_HTML_HTMLLinks' [38 139 210]
-        'Colors_M_Warnings' [203  75  22]
-        'Editor.VariableHighlighting.Color' [238 232 213]
-        'Editor.NonlocalVariableHighlighting.TextColor' [42 161 152] % [108 113 196]
-        'Editorhighlight-lines' [238 232 213]
-        'ColorsUseSystem' false
-        'ColorsUseMLintAutoFixBackground' false
-        'Editor.VariableHighlighting.Automatic' true
-        'Editor.NonlocalVariableHighlighting' true
-        'EditorCodepadHighVisible' false
-        'EditorCodeBlockDividers' true
-    }; ...
+    [
+        {
+            'ColorsText'         '657B83'
+            'ColorsBackground'   'FDF6E3'
+        }
+        SolarizedCommon
+    ]; ...
     'Solarized Dark', ...
-    {
-        'ColorsText'         '839496'
-        'ColorsBackground'   '002B36'
-        'Colors_M_Keywords'  'B58900'
-        'Colors_M_Comments'  '93A1A1'
-        'Colors_M_Strings'   '2AA198'
-        'Colors_M_UnterminatedStrings' '586E75'
-        'Colors_M_SystemCommands' [181 137 0]
-        'Color_CmdWinErrors' [220  50  47]
-        'Color_CmdWinWarnings' [203  75  22]
-        'Colors_HTML_HTMLLinks' [38 139 210]
-        'Colors_M_Warnings' [203  75  22]
-        'Editor.VariableHighlighting.Color' [7 54 66]
-        'Editor.NonlocalVariableHighlighting.TextColor' [42 161 152] % [108 113 196]
-        'Editorhighlight-lines' [238 232 213]
-        'ColorsUseSystem' false
-        'ColorsUseMLintAutoFixBackground' false
-        'Editor.VariableHighlighting.Automatic' true
-        'Editor.NonlocalVariableHighlighting' true
-        'EditorCodepadHighVisible' false
-        'EditorCodeBlockDividers' true
-    }
-    };
+    [
+        {
+            'ColorsText'         '839496'
+            'ColorsBackground'   '002B36'
+        }
+        SolarizedCommon
+    ]
+};
+
 Themes = struct('Name',Data(:,1),'Settings',Data(:,2));
 
 
