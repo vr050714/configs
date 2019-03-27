@@ -59,12 +59,12 @@ Data = {
     }; ...
     'Solarized Light', ...
     {
-        'ColorsText' [88 110 117]
-        'ColorsBackground' [253 246 227]
-        'Colors_M_Keywords' [38 139 210]
-        'Colors_M_Comments' [147 161 161]
-        'Colors_M_Strings' [108 113 196] % [42 161 152]
-        'Colors_M_UnterminatedStrings' [181 137 0]
+        'ColorsText'         '657A81'
+        'ColorsBackground'   'FDF6E3'
+        'Colors_M_Keywords'  'B58900'
+        'Colors_M_Comments'  '93A1A1'
+        'Colors_M_Strings'   '2AA198'
+        'Colors_M_UnterminatedStrings' '586E75'
         'Colors_M_SystemCommands' [181 137 0]
         'Color_CmdWinErrors' [220  50  47]
         'Color_CmdWinWarnings' [203  75  22]
@@ -82,12 +82,12 @@ Data = {
     }; ...
     'Solarized Dark', ...
     {
-        'ColorsText' [147 161 161]
-        'ColorsBackground' [0 45 54]
-        'Colors_M_Keywords' [108 113 196] % [38 139 210]
-        'Colors_M_Comments' [88 110 117]
-        'Colors_M_Strings' [38 139 210] % [108 113 196] % [42 161 152]
-        'Colors_M_UnterminatedStrings' [181 137 0]
+        'ColorsText'         '839496'
+        'ColorsBackground'   '002B36'
+        'Colors_M_Keywords'  'B58900'
+        'Colors_M_Comments'  '93A1A1'
+        'Colors_M_Strings'   '2AA198'
+        'Colors_M_UnterminatedStrings' '586E75'
         'Colors_M_SystemCommands' [181 137 0]
         'Color_CmdWinErrors' [220  50  47]
         'Color_CmdWinWarnings' [203  75  22]
@@ -113,7 +113,10 @@ for n = 1:size(Settings,1)
     val = Settings{n,2};
     if (isa(val,'double') || isa(val,'logical')) && length(val) == 1
         com.mathworks.services.Prefs.setBooleanPref(key, val>0);
-    elseif isa(val,'double') && length(val) == 3
+    elseif isa(val,'double') && length(val) == 3 || isa(val,'char') && length(val) == 6
+        if isa(val,'char')
+            val = hexcolor(val);
+        end
         com.mathworks.services.Prefs.setColorPref(key, java.awt.Color(val(1)/255, val(2)/255, val(3)/255));
         com.mathworks.services.ColorPrefs.notifyColorListeners(key)
     else
@@ -121,3 +124,7 @@ for n = 1:size(Settings,1)
     end
 end
 com.mathworks.services.Prefs.save;
+
+
+function c = hexcolor(s)
+c = [hex2dec(s(1:2)), hex2dec(s(3:4)), hex2dec(s(5:6))];
