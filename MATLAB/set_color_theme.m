@@ -13,8 +13,8 @@ function Themes = get_all_themes
 
 SolarizedCommon = {
     'Colors_M_Keywords'  'B58900'
-    'Colors_M_Comments'  '93A1A1'
-    'Colors_M_Strings'   '2AA198'
+    'Colors_M_Comments'  '2AA198'
+    'Colors_M_Strings'   'D33682'
     'Colors_M_UnterminatedStrings' '586E75'
     'Colors_M_SystemCommands'  '859900'
     'Color_CmdWinErrors'       'DC322F'
@@ -22,7 +22,7 @@ SolarizedCommon = {
     'Colors_HTML_HTMLLinks'    '268BD2'
     'Colors_M_Warnings'        'CB4B16'
     'Editor.VariableHighlighting.Color' 'EEE8D5'
-    'Editor.NonlocalVariableHighlighting.TextColor'  'D33682'
+    'Editor.NonlocalVariableHighlighting.TextColor'  '268BD2'
     'Editorhighlight-lines'  '859900'
     'ColorsUseSystem' false
     'ColorsUseMLintAutoFixBackground' false
