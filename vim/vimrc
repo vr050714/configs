@@ -7,10 +7,13 @@ set softtabstop=4
 syntax on
 
 let g:airline#extensions#tabline#enabled=1
+let g:airline_theme='solarized'
 
-nmap <Tab> :tabNext<CR>
+nmap <C-Tab> :bn<CR>
+nmap <S-Tab> :bp<CR>
+nmap <C-x>   :bw<CR>
 
-call plug#begin('~/.vim/bundle')
+call plug#begin('~/vimfiles/bundle')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
