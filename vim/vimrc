@@ -13,7 +13,7 @@ nmap <C-Tab> :bn<CR>
 nmap <S-Tab> :bp<CR>
 nmap <C-x>   :bw<CR>
 
-call plug#begin('~/vimfiles/bundle')
+call plug#begin('~/.vim/bundle')
 
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
