@@ -29,3 +29,6 @@ Windows Registry Editor Version 5.00
 ; LGRAY WHITE
 "ColorTable07"=dword:00ccdcdc
 "ColorTable15"=dword:00ffffff
+; SELECT COLORS
+"ScreenColors"=dword:00000007
+"PopupColors"=dword:000000f5
