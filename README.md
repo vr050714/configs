@@ -1,5 +1,5 @@
 # configs
-This is a collection of various configuration files. It includes [Solarazed](https://ethanschoonover.com/solarized/) and [Zenburn](https://github.com/bbatsov/zenburn-emacs) themes for MATLAB and Windows console.
+This is a collection of various configuration files. It includes [Solarized](https://ethanschoonover.com/solarized/) and [Zenburn](https://github.com/bbatsov/zenburn-emacs) themes for MATLAB and Windows console.
 
 ## MATLAB Color Themes
 
