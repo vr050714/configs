@@ -1,7 +1,6 @@
 Windows Registry Editor Version 5.00
 ; Zenburn is a low-contrast color scheme
 ; for Windows command prompt.
-; See : http://slinky.imukuppi.org/zenburnpage/
 
 ; Values stored as 00-BB-GG-RR
 [HKEY_CURRENT_USER\Console]
