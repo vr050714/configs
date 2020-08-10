@@ -18,6 +18,12 @@ nnoremap <C-L> <C-W><C-L>
 set splitbelow
 set splitright
 
+" control tabs (Ctrl-TAB does not work)
+"nmap <C-Tab> :tabn<CR>
+"nmap <C-S-Tab> :tabp<CR>
+nmap <C-T> :tabnew<CR>
+nmap <C-W> :tabclose<CR>
+
 " Configure netrw
 let g:netrw_banner = 0
 let g:netrw_localrmdir="rm -r"
