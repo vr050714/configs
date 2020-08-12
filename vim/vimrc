@@ -24,6 +24,9 @@ set splitright
 nmap <C-T> :tabnew<CR>
 nmap <C-W> :tabclose<CR>
 
+" Configure powerline
+let g:powerline_pycmd = 'py3'
+
 " Configure netrw
 let g:netrw_banner = 0
 let g:netrw_localrmdir="rm -r"
