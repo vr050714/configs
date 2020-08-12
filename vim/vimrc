@@ -25,6 +25,7 @@ nmap <C-T> :tabnew<CR>
 nmap <C-W> :tabclose<CR>
 
 " Configure powerline
+set laststatus=2
 let g:powerline_pycmd = 'py3'
 
 " Configure netrw
